@@ -1,0 +1,123 @@
+@use 'variables' as v;
+
+.about-section {
+    padding-bottom: 168px;
+
+    .about-container {
+        padding: 137px 85px;
+        background-image: url('../assets/About-us/Bitmapabout-us-bgimg.png');
+        background-repeat: no-repeat;
+    }
+
+    .about-info {
+        width: 445px;
+    }
+
+    .about__heading {
+        margin-bottom: 24px;
+        @include v.about-heading;
+        color: #FEFCF7;
+    }
+
+    .about__desc {
+        @include v.desc;
+        color: #FEFCF7;
+    }
+}
+
+.commitment-section {
+    .commitment-container {
+        width: 1110px;
+        @include v.flex(space-between);
+        align-items: center;
+    }
+
+    .commitment-right {
+        width: 540px;
+    }
+
+    .commitment__heading {
+        @include v.about-heading;
+        margin-bottom: 32px;
+    }
+
+    .commitment__desc {
+        @include v.desc;
+        color: #333D4B;
+        opacity: 0.8;
+    }
+}
+
+.quality-section {
+    padding-top: 256px;
+    padding-bottom: 168px;
+
+    .quality-container {
+        position: relative;
+        padding: 88px 85px 176px;
+        background: #2C343E;
+        border-radius: 10px;
+    }
+
+    .quality-right {
+        width: 540px;
+    }
+
+    .quality__heading {
+        @include v.about-heading;
+        margin-bottom: 32px;
+        color: #FEFCF7;
+    }
+
+    .quality__desc {
+        @include v.desc;
+        color: #FEFCF7;
+        opacity: 0.8;
+    }
+
+    .quality__img {
+        position: absolute;
+        right: 85px;
+        top: -76px;
+        border-radius: 8px;
+    }
+}
+
+.location-section {
+    padding-bottom: 168px;
+
+    .location-container {
+        width: 1045px;
+    }
+
+    .location__heading {
+        @include v.heading;
+        color: #83888F;
+        margin-bottom: 72px;
+    }
+    
+    .location-list {
+        @include v.flex(space-between);
+    }
+
+    .location-item {
+        width: 285px;
+    }
+
+    .location__img {
+        margin-bottom: 45px;
+    }
+
+    .location-item-info__heading {
+        margin-bottom: 24px;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+    }
+
+    .location-item-info__desc, .uk_num {
+        @include v.desc;
+        color: #333D4B;;
+    }
+}

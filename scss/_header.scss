@@ -1,0 +1,24 @@
+@use 'variables' as v;
+
+.header {
+    padding-top: 44px;
+    padding-bottom: 44px;
+
+    .header-container {
+        @include v.flex(space-between);
+    }
+
+    .header-list {
+        width: 283px;
+        @include v.flex(space-between);
+    }
+
+    .header__link {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+    }
+}

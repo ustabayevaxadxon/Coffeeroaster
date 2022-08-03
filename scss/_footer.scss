@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+.footer {
+    .footer-container {
+        background: #2C343E;
+        padding: 48px 85px;
+    }
+
+    .footer-list {
+        @include v.flex(space-between);
+        align-items: center;
+    }
+
+    .footer-item-list {
+        margin-right: 200px;
+        width: 283px;
+        @include v.flex(space-between);
+    }
+
+    .footer-item-list-item__link {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+    }
+
+    .footer-item__logo {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+}

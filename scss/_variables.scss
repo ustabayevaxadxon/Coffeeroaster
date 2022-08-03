@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Jost:wght@200;300;400;500&family=Mulish:wght@200&family=Open+Sans:wght@300;400&family=Poppins:wght@300;400;500;600&display=swap');
+
+@mixin flex($justify_content) {
+    display: flex;
+    justify-content: $justify_content;
+}
+
+@mixin about-heading {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+@mixin heading {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin btn {
+    padding: 16px 32px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    background: #0E8784;
+    border-radius: 6px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background: #F2F2F2;
+    font-family: 'Fraunces', serif;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+a,
+a:active,
+a::before {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
