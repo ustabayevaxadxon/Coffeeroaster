@@ -1,0 +1,122 @@
+@use 'variables' as v;
+
+@media (max-width: 768px) {
+    .container {
+        width: 689px;
+
+        .hero-container {
+            margin: 0;
+            padding: 0;
+            background-image: url('../assets/Home/Main/Bitmapbg-tablet.png');
+        }
+
+        .hero__heading {
+            width: 329px;
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        .hero__desc {
+            @include v.tablet-text;
+        }
+
+        .collection-container {
+            background-image: none;
+        }
+
+        .collection-list {
+            width: 689px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .collection-item {
+            @include v.flex(space-between);
+            align-items: center;
+            width: 557px;
+            margin-bottom: 48px;
+        }
+
+        .collection-item .collection__img {
+            margin: 0;
+        }
+
+        .collection-item__info__heading,
+        .collection-item__info__desc {
+            text-align: left;
+        }
+
+        .feature-list {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .feature-item {
+            margin-bottom: 24px;
+            width: 557px;
+            height: 180px;
+            flex-direction: row;
+            padding: 41px 48px 41px 70px;
+            align-items: center;
+        }
+
+        .feature__img {
+            margin: 0;
+        }
+
+        .feature-item-info {
+            margin-left: 55px;
+        }
+
+        .feature-item-info__heading,
+        .feature-item-info__desc {
+            text-align: left;
+        }
+
+        .working__heading {
+            width: 255px;
+            margin: 0;
+        }
+
+        .rec {
+            width: 497px;
+            margin: 0;
+        }
+        .working-info-list {
+            width: 689px;
+        }
+
+        .working-info-item {
+            width: 223px;
+        }
+
+        .footer-container {
+            width: 689px;
+        }
+
+        .footer-list {
+            margin: 0 auto;
+            width: 283px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-item-list {
+            margin: 0 0 65px;
+        }
+
+        .footer__img {
+            margin-bottom: 32px;
+        }
+        .footer-container {
+            width: 689px;
+        }
+    }
+    .working-section {
+        border: 1px solid black;
+        width: 689px;
+        margin: 0 auto;
+        padding-top: 434px 0;
+    }
+}

@@ -52,7 +52,8 @@ li {
   padding-bottom: 136px;
 }
 .hero-section .hero-container {
-  background: #A2A2A2;
+  background-image: url("../assets/Home/Main/Bitmapbg-img.png");
+  background-repeat: no-repeat;
   border-radius: 10px;
   padding-top: 117px;
   padding-left: 85px;
@@ -93,7 +94,6 @@ li {
 .collection-section .collection-container {
   padding-top: 126px;
   width: 1111px;
-  background-image: url("../assets/Home/Main/Group 13collection.png");
   background-repeat: no-repeat;
 }
 .collection-section .collection-list {
@@ -394,4 +394,108 @@ li {
   font-size: 16px;
   line-height: 26px;
   color: #333D4B;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 689px;
+  }
+  .container .hero-container {
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/Home/Main/Bitmapbg-tablet.png");
+  }
+  .container .hero__heading {
+    width: 329px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .container .hero__desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .container .collection-container {
+    background-image: none;
+  }
+  .container .collection-list {
+    width: 689px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .collection-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 557px;
+    margin-bottom: 48px;
+  }
+  .container .collection-item .collection__img {
+    margin: 0;
+  }
+  .container .collection-item__info__heading,
+.container .collection-item__info__desc {
+    text-align: left;
+  }
+  .container .feature-list {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .container .feature-item {
+    margin-bottom: 24px;
+    width: 557px;
+    height: 180px;
+    flex-direction: row;
+    padding: 41px 48px 41px 70px;
+    align-items: center;
+  }
+  .container .feature__img {
+    margin: 0;
+  }
+  .container .feature-item-info {
+    margin-left: 55px;
+  }
+  .container .feature-item-info__heading,
+.container .feature-item-info__desc {
+    text-align: left;
+  }
+  .container .working__heading {
+    width: 255px;
+    margin: 0;
+  }
+  .container .rec {
+    width: 497px;
+    margin: 0;
+  }
+  .container .working-info-list {
+    width: 689px;
+  }
+  .container .working-info-item {
+    width: 223px;
+  }
+  .container .footer-container {
+    width: 689px;
+  }
+  .container .footer-list {
+    margin: 0 auto;
+    width: 283px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .footer-item-list {
+    margin: 0 0 65px;
+  }
+  .container .footer__img {
+    margin-bottom: 32px;
+  }
+  .container .footer-container {
+    width: 689px;
+  }
+  .working-section {
+    border: 1px solid black;
+    width: 689px;
+    margin: 0 auto;
+    padding-top: 434px 0;
+  }
 }/*# sourceMappingURL=style.css.map */

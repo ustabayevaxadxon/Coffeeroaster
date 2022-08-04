@@ -4,7 +4,8 @@
     padding-bottom: 136px;
 
     .hero-container {
-        background: #A2A2A2;
+        background-image: url('../assets/Home/Main/Bitmapbg-img.png');
+        background-repeat: no-repeat;
         border-radius: 10px;
         padding-top: 117px;
         padding-left: 85px;
@@ -40,7 +41,7 @@
     .collection-container {
         padding-top: 126px;
         width: 1111px;
-        background-image: url('../assets/Home/Main/Group\ 13collection.png');
+        // background-image: url('../assets/Home/Main/Group\ 13collection.png');
         background-repeat: no-repeat;
     }
 
