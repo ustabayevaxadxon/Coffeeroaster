@@ -1,0 +1,175 @@
+@use 'variables' as v;
+
+@media (max-width: 768px) {
+    .about-section {
+        .about-container {
+            background-image: url('../assets/About-us/Bitmapabout-us-tablet.jpg');
+            padding: 118px 58px;
+
+            .about-info {
+                width: 389px;
+
+                .about__heading {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+
+                .about__desc {
+                    @include v.tablet-text;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .commitment-section {
+        .commitment-container {
+            width: 689px;
+            background-image: url('../assets/About-us/Bitmapcommitment-tablet.jpg');
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: end;
+
+            .commitment__img {
+                display: none;
+            }
+
+            .commitment-right {
+                width: 339px;
+
+                .commitment__heading {
+                    font-size: 32px;
+                    color: #333D4B;
+                }
+
+                .commitment__desc {
+                    @include v.tablet-text;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .quality-section {
+        .quality-container {
+            padding-top: 224px;
+            padding-bottom: 67px;
+
+            .quality__img {
+                right: 58px;
+                top: -160px;
+                width: 573px;
+                height: 320px;
+            }
+
+            .quality-right {
+                .quality__heading {
+                    font-size: 32px;
+                    text-align: center;
+                }
+
+                .quality__desc {
+                    @include v.tablet-text;
+                    text-align: center;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .location-section {
+        .location-container {
+            width: 689px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .about-section {
+        .about-container {
+            padding: 111px 24px 87px;
+            display: flex;
+            align-items: center;
+            background-image: url('../assets/About-us/mobile-about.jpg');
+            background-size: 327px 400px;
+
+            .about-info {
+                width: 279px;
+
+                .about__desc {
+                    @include v.tablet-text;
+                    opacity: 0.8;
+                }
+
+                .about__heading,
+                .about__desc {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .commitment-section {
+        .commitment-container {
+            background-image: url('../assets/About-us/Bitmapcommitment-mobile.png');
+            width: 327px;
+            padding-top: 448px;
+
+            .commitment-right {
+                width: 327px;
+
+                .commitment__heading, .commitment__desc {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .quality-section {
+        .quality-container {
+            padding: 142px 24px 61px;
+            display: flex;
+            align-items: center;
+
+            .quality__img {
+                width: 279px;
+                height: 156px;
+                top: -78px;
+                right: 24px;
+            }
+
+            .quality-right {
+                width: 279px;
+            }
+        }
+    }
+
+    .location-section {
+        .location-container {
+            width: 327px;
+
+            .location__heading {
+                text-align: center;
+            }
+
+            .location-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .location-item {
+                    margin-bottom: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .location-item-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

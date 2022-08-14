@@ -1,6 +1,8 @@
 @use 'variables' as v;
 
 .footer {
+    margin: 0 auto;
+
     .footer-container {
         background: #2C343E;
         padding: 48px 85px;
@@ -9,10 +11,11 @@
     .footer-list {
         @include v.flex(space-between);
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .footer-item-list {
-        margin-right: 200px;
         width: 283px;
         @include v.flex(space-between);
     }
@@ -30,4 +33,39 @@
         margin-left: 24px;
         margin-right: 24px;
     }
+}
+
+@media (max-width: 830px) {
+    .working-section .working-info-list {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .working-section .working-info-item {
+        margin-bottom: 32px;
+    }
+
+    .working-section .plan__btn {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .footer-social-links {
+        max-width: 689px;
+        width: 100%;
+
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo-link {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+    }
+
 }

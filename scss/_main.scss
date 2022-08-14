@@ -32,6 +32,7 @@
 
     .hero__btn {
         @include v.btn;
+        border: 0;
     }
 }
 
@@ -40,13 +41,16 @@
 
     .collection-container {
         padding-top: 126px;
-        width: 1111px;
-        // background-image: url('../assets/Home/Main/Group\ 13collection.png');
+        background-image: url('../assets/Home/Main/Group\ 13collection.png');
+        margin: 0 auto;
+        max-width: 1111px;
         background-repeat: no-repeat;
     }
-
+    
     .collection-list {
         @include v.flex(space-between);
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .collection-item {
@@ -99,8 +103,10 @@
     }
 
     .feature-list {
-        width: 1110px;
+        max-width: 1110px;
+        width: 100%;
         @include v.flex(space-between);
+        flex-wrap: wrap
     }
 
     .feature-item {
@@ -138,10 +144,13 @@
     padding-bottom: 200px;
 
     .working-container {
-        width: 1045px;
+        max-width: 1045px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .working__heading {
+        width: 255px;
         @include v.heading;
         color: #83888F;
         margin-bottom: 80px;
@@ -152,7 +161,8 @@
         background-image: url('../assets/Home/Main/Path\ 2line.png');
         background-repeat: no-repeat;
         background-position: center;
-        width: 790px;
+        max-width: 790px;
+        width: 100%;
     }
 
     .rec-list {
@@ -165,7 +175,8 @@
     }
 
     .working-info-item {
-        width: 285px;
+        max-width: 285px;
+        width: 100%;
     }
 
     .working-info__num {
@@ -177,6 +188,7 @@
     }
 
     .working-info__heading {
+        width: 255px;
         margin-bottom: 42px;
         font-weight: 900;
         font-size: 32px;
@@ -185,11 +197,13 @@
     }
 
     .working-info__desc {
+        width: 240px;
         @include v.desc;
         color: #333D4B;
     }
 
     .plan__btn {
         @include v.btn;
+        border: 0;
     }
 }

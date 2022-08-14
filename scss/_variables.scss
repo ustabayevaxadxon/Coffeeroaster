@@ -36,14 +36,12 @@
 }
 
 @mixin tablet-heading {
-    font-weight: 900;
     font-size: 24px;
     line-height: 32px;
     text-align: center;
 }
 
 @mixin tablet-text {
-    font-weight: 400;
     font-size: 15px;
     line-height: 25px;
 }
@@ -60,7 +58,9 @@ body {
 }
 
 .container {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
+    // padding: 0 20px;
     margin: 0 auto;
 }
 

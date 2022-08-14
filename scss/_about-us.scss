@@ -10,7 +10,8 @@
     }
 
     .about-info {
-        width: 445px;
+        max-width: 445px;
+        width: 100%;
     }
 
     .about__heading {
@@ -27,17 +28,25 @@
 
 .commitment-section {
     .commitment-container {
-        width: 1110px;
+        margin: 0 auto;
+        max-width: 1110px;
+        width: 100%;
         @include v.flex(space-between);
         align-items: center;
     }
 
+    .commitment__img {
+        border-radius: 10px;
+    }
+
     .commitment-right {
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
     }
 
     .commitment__heading {
         @include v.about-heading;
+        color: #333D4B;
         margin-bottom: 32px;
     }
 
@@ -60,7 +69,8 @@
     }
 
     .quality-right {
-        width: 540px;
+        max-width: 540px;
+        width: 100%;
     }
 
     .quality__heading {
@@ -87,7 +97,9 @@
     padding-bottom: 168px;
 
     .location-container {
-        width: 1045px;
+        max-width: 1045px;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .location__heading {
@@ -101,7 +113,8 @@
     }
 
     .location-item {
-        width: 285px;
+        max-width: 285px;
+        width: 100%;
     }
 
     .location__img {
